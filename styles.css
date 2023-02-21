@@ -96,6 +96,9 @@ header .header-circle h2 {
   background-color: hsla(234deg, 85%, 45%, 0.2);
   color: hsl(234deg, 85%, 45%);
 }
+.summary-card .box-title {
+  align-self: center;
+}
 .summary-card .box-score {
   float: right;
 }
@@ -110,4 +113,41 @@ header .header-circle h2 {
 }
 .summary-card button :hover {
   background-color: red;
+  cursor: pointer;
+}
+
+#react-js, #memory-js, #visual-js, #verbal-js {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    margin-top: 10rem;
+    flex-direction: row;
+  }
+  header, .summary-card {
+    width: 100%;
+    max-width: 20rem;
+  }
+  header {
+    width: 100%;
+    border-radius: 1rem;
+    margin-left: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .summary-card {
+    margin-right: 5rem;
+  }
+  .summary-card .summary-title {
+    font-weight: 800;
+    font-size: 2rem;
+  }
+  .summary-card button {
+    border-radius: 2rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

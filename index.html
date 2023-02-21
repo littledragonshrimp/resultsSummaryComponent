@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="styles.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 10px; text-align: center; margin-top: 5rem }
+    .attribution a { font-size: 10px; color: hsl(228, 45%, 44%); }
   </style>
 
 
@@ -39,6 +39,7 @@
     <h4 class="summary-title">Summary</h4>
 
     <div class="box reaction">
+      <span id="reaction-js"></span>
       <img src="assets/images/icon-reaction.svg" alt="reaction-score" srcset="">
       <span class="box-title">Reaction</span>
 
@@ -46,6 +47,7 @@
     </div>
     
     <div class="box memory">
+      <span id="memory-js"></span>
       <img src="assets/images/icon-memory.svg" alt="memory-score" srcset="">
       <span class="box-title">Memory</span>
 
@@ -53,6 +55,7 @@
     </div>
 
     <div class="box verbal">
+      <span id="verbal-js"></span>
       <img src="assets/images/icon-verbal.svg" alt="verbal-score" srcset="">
       <span class="box-title">Verbal</span>
 
@@ -60,19 +63,20 @@
     </div>
 
     <div class="box visual">
+      <span id="visual-js"></span>
       <img src="assets/images/icon-visual.svg" alt="visual-score" srcset="">
       <span class="box-title">Visual</span>
 
       <span class="box-score">72 / 100</span>
     </div>
 
-    <button>Continue</button>
+    <button type="button">Continue</button>
   </div>
 </main>
     <footer>
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
+        Coded by <a href="https://github.com/littledragonshrimp/resultsSummaryComponent">littleDragonShrimp</a>.
       </div>
     </footer>
     <script src="actions.js"></script>

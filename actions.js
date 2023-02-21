@@ -9,6 +9,6 @@ fetch("./data.json")
             console.log("Not Successful")
         }
     })
-    
     .then(data => console.log(data))
     .catch(error => console.log("ERROR"))
+

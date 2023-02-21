@@ -116,6 +116,11 @@ header{
             background-color: $cobaltblueBack;
             color: $cobaltblue;
         }
+        
+
+        .box-title{
+            align-self: center;
+        }
 
         .box-score{
             float: right;
@@ -129,8 +134,48 @@ header{
             height: 3rem;
             margin-top: 1rem;
             margin-bottom:1rem;
-            & :hover{
+            :hover{
                 background-color: red;
+                cursor: pointer;
             }
         }
     }
+
+//js components
+#react-js, #memory-js, #visual-js, #verbal-js{
+    display: none;
+}
+
+@media screen and (min-width: 1000px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    main{
+        margin-top: 10rem;
+        flex-direction: row;
+    }
+    
+    header, .summary-card{
+        width: 100%;
+        max-width: 20rem;
+    }
+    header{
+        width: 100%;
+        border-radius: 1rem;
+        margin-left: 5rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .summary-card{
+        margin-right: 5rem;
+        .summary-title{
+            font-weight: 800;
+            font-size: 2rem;
+        }
+        button{
+            border-radius: 2rem;
+        }
+    }
+}
