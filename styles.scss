@@ -1,0 +1,136 @@
+$Lightred: hsl(0, 100%, 67%);
+$Orangeyyellow: hsl(39, 100%, 56%);
+$Greenteal: hsl(166, 100%, 37%);
+$cobaltblue: hsl(234, 85%, 45%);
+
+$LightredBack: hsla(0, 100%, 67%, .2);
+$OrangeyyellowBack: hsla(39, 100%, 56%, .2);
+$GreentealBack: hsla(166, 100%, 37%, .2);
+$cobaltblueBack: hsla(234, 85%, 45%, .2);
+
+$lightslate: hsl(252, 100%, 67%); //background
+$lightroyal: hsl(241, 81%, 54%); //background
+$violetblue : hsla(256, 72%, 46%, 1); //circle
+$Persianblue: hsla(241, 72%, 46%, 0); //circle
+
+$White: hsl(0, 0%, 100%);
+$Paleblue: hsl(221, 100%, 96%);
+$Lightlavender: hsl(241, 100%, 89%);
+$Darkgray: hsl(224, 30%, 27%);
+
+*{
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+////MOBILE TOP SECTION
+header{
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    p{
+        color: $Paleblue;
+    }
+    .result-title{
+        color:$Lightlavender;
+    }
+    h3{
+        color:hsl(0, 0%, 100%);
+    }
+    .result-title{
+        margin-top: 1rem;
+        font-weight: 700;
+    }
+    .result-text{
+        margin-top: 1rem;
+        h3{
+            font-weight: 800;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        p{
+            margin: auto;
+            max-width: 80%;
+        }
+    }
+    .header-circle{
+        background-image: linear-gradient(to bottom, $violetblue, $Persianblue);
+        border-radius: 50%;
+        width: 30%;
+        height: 30%;
+        min-width: 9rem;
+        min-height: 9rem;
+        margin-left: auto;
+        margin-right: auto;
+        h2{
+            font-size: 4rem;
+            margin-top: 1rem;
+            line-height: 6.5rem;
+            font-weight: 800;
+            color:hsl(221, 100%, 96%);
+        }
+    }
+}
+///MOBILE CARD SECTION
+    .summary-card{
+        width: 90%;
+        padding: 0;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        .summary-title{
+            margin: 1rem 1rem 1rem 0;
+            text-align: left;
+        }
+
+        .box{
+            color: $Paleblue;
+            margin-top: 1rem;
+            padding: 1rem .5rem 1rem .5rem;
+            border-radius: .5rem;
+        }
+        .reaction{
+            background-color: $LightredBack;
+            color: $Lightred
+        }
+        .memory{
+            background-color: $OrangeyyellowBack;
+            color: $Orangeyyellow
+        }
+        .verbal{
+            background-color: $GreentealBack;
+            color: $Greenteal;
+        }
+        .visual{
+            background-color: $cobaltblueBack;
+            color: $cobaltblue;
+        }
+
+        .box-score{
+            float: right;
+        }
+
+        button{
+            background-color: $Darkgray;
+            color: white;
+            border-radius: 1rem;
+            width: 100%;
+            height: 3rem;
+            margin-top: 1rem;
+            margin-bottom:1rem;
+            & :hover{
+                background-color: red;
+            }
+        }
+    }

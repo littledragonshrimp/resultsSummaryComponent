@@ -1,0 +1,113 @@
+* {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-image: linear-gradient(to bottom, hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
+  text-align: center;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+header p {
+  color: hsl(221deg, 100%, 96%);
+}
+header .result-title {
+  color: hsl(241deg, 100%, 89%);
+}
+header h3 {
+  color: hsl(0deg, 0%, 100%);
+}
+header .result-title {
+  margin-top: 1rem;
+  font-weight: 700;
+}
+header .result-text {
+  margin-top: 1rem;
+}
+header .result-text h3 {
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+header .result-text p {
+  margin: auto;
+  max-width: 80%;
+}
+header .header-circle {
+  background-image: linear-gradient(to bottom, hsl(256deg, 72%, 46%), hsla(241deg, 72%, 46%, 0));
+  border-radius: 50%;
+  width: 30%;
+  height: 30%;
+  min-width: 9rem;
+  min-height: 9rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+header .header-circle h2 {
+  font-size: 4rem;
+  margin-top: 1rem;
+  line-height: 6.5rem;
+  font-weight: 800;
+  color: hsl(221deg, 100%, 96%);
+}
+
+.summary-card {
+  width: 90%;
+  padding: 0;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.summary-card .summary-title {
+  margin: 1rem 1rem 1rem 0;
+  text-align: left;
+}
+.summary-card .box {
+  color: hsl(221deg, 100%, 96%);
+  margin-top: 1rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  border-radius: 0.5rem;
+}
+.summary-card .reaction {
+  background-color: hsla(0deg, 100%, 67%, 0.2);
+  color: hsl(0deg, 100%, 67%);
+}
+.summary-card .memory {
+  background-color: hsla(39deg, 100%, 56%, 0.2);
+  color: hsl(39deg, 100%, 56%);
+}
+.summary-card .verbal {
+  background-color: hsla(166deg, 100%, 37%, 0.2);
+  color: hsl(166deg, 100%, 37%);
+}
+.summary-card .visual {
+  background-color: hsla(234deg, 85%, 45%, 0.2);
+  color: hsl(234deg, 85%, 45%);
+}
+.summary-card .box-score {
+  float: right;
+}
+.summary-card button {
+  background-color: hsl(224deg, 30%, 27%);
+  color: white;
+  border-radius: 1rem;
+  width: 100%;
+  height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.summary-card button :hover {
+  background-color: red;
+}/*# sourceMappingURL=styles.css.map */
