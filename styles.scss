@@ -178,7 +178,8 @@ header{
             border-radius: 2rem;
         }
         button:hover{
-            background-color: $cobaltblue;
+            background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+            scale: 1.08;
             transition: .3s;
         }
     }

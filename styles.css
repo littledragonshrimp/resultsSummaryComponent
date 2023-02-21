@@ -151,7 +151,8 @@ header .header-circle h2 {
     border-radius: 2rem;
   }
   .summary-card button:hover {
-    background-color: hsl(234deg, 85%, 45%);
+    background-image: linear-gradient(to bottom, hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
+    scale: 1.08;
     transition: 0.3s;
   }
 }/*# sourceMappingURL=styles.css.map */
