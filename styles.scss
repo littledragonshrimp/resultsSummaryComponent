@@ -177,5 +177,9 @@ header{
         button{
             border-radius: 2rem;
         }
+        button:hover{
+            background-color: $cobaltblue;
+            transition: .3s;
+        }
     }
 }

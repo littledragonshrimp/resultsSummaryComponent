@@ -150,4 +150,8 @@ header .header-circle h2 {
   .summary-card button {
     border-radius: 2rem;
   }
+  .summary-card button:hover {
+    background-color: hsl(234deg, 85%, 45%);
+    transition: 0.3s;
+  }
 }/*# sourceMappingURL=styles.css.map */
