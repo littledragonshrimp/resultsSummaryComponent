@@ -13,7 +13,7 @@ main {
   align-items: center;
 }
 
-header {
+.header-1 {
   background-image: linear-gradient(to bottom, hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
   text-align: center;
   border-bottom-left-radius: 1rem;
@@ -21,32 +21,32 @@ header {
   padding: 1rem;
   padding-bottom: 2rem;
 }
-header p {
+.header-1 p {
   color: hsl(221deg, 100%, 96%);
 }
-header .result-title {
+.header-1 .result-title {
   color: hsl(241deg, 100%, 89%);
 }
-header h3 {
+.header-1 h3 {
   color: hsl(0deg, 0%, 100%);
 }
-header .result-title {
+.header-1 .result-title {
   margin-top: 1rem;
   font-weight: 700;
 }
-header .result-text {
+.header-1 .result-text {
   margin-top: 1rem;
 }
-header .result-text h3 {
+.header-1 .result-text h3 {
   font-weight: 800;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
-header .result-text p {
+.header-1 .result-text p {
   margin: auto;
   max-width: 80%;
 }
-header .header-circle {
+.header-1 .header-circle {
   background-image: linear-gradient(to bottom, hsl(256deg, 72%, 46%), hsla(241deg, 72%, 46%, 0));
   border-radius: 50%;
   width: 30%;
@@ -56,7 +56,7 @@ header .header-circle {
   margin-left: auto;
   margin-right: auto;
 }
-header .header-circle h2 {
+.header-1 .header-circle h2 {
   font-size: 4rem;
   margin-top: 1rem;
   line-height: 6.5rem;
@@ -129,11 +129,11 @@ header .header-circle h2 {
     margin-top: 10rem;
     flex-direction: row;
   }
-  header, .summary-card {
+  .header-1, .summary-card {
     width: 100%;
     max-width: 20rem;
   }
-  header {
+  .header-1 {
     width: 100%;
     border-radius: 1rem;
     margin-left: 5rem;

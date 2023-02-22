@@ -33,7 +33,7 @@ main{
     align-items: center;
 }
 ////MOBILE TOP SECTION
-header{
+.header-1{
     background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     text-align: center;
     border-bottom-left-radius: 1rem;
@@ -157,11 +157,11 @@ header{
         flex-direction: row;
     }
     
-    header, .summary-card{
+    .header-1, .summary-card{
         width: 100%;
         max-width: 20rem;
     }
-    header{
+    .header-1{
         width: 100%;
         border-radius: 1rem;
         margin-left: 5rem;
