@@ -1,66 +1,33 @@
-//import data from './data.json' assert type {'json'};
-//console.log(data);
-
-//  fetch("./data.json")
-//      .then(res => {
-//          if (res.ok) {
-//              console.log("SUCCESS")
-//          } else{
-//              console.log("Not Successful")
-//          }
-//      })
-//      .then(data => console.log(data.json))
-//      .catch(error => console.log("ERROR"))
-// 
-// const category = JSON.parse(category.json[0]);
-// console.log(category);
-
-
-// var data = JSON.parse(DATA);
-// 
-// var list = document.createElement("ul");
-// for (let i of data) { var item =
-// document.createElement("li"); list.appendChild(item)
-// }
-// 
-// document.getElementsById(ID).appendChild(list);
-
-// const data = require('./data.json');
-// 
-// console.log(data.category.map(()))
-// 
-// const category = console.log(data.category[1]);
 
 fetch('./data.json')
     .then((response) => response.json())
     .then((json) => {
+        //Score and genSummaryItems (JS inputs)
         let summaryItems = document.getElementById("summaryItems");
         let genSummaryItems = "";
 
-        let resultAvg = document.getElementById("resultScore");
+        // Average of scores (JS inputs)
+        let result = document.getElementById("resultScore");
         let genResultAvg = "";
         console.log(genResultAvg);
 
-     //   let scores = json.forEach(item =>) {
-     //       
-     //   }
-     //   var as = JSON.parse(jstring);
-     //   let averageScorePlacement = document.getElementById("resultScore");
+        // 
+        let scoreSum = 0;
 
-        // score information
-        // let averageScore = document.getElementsByid("resultScore");
-//
-        //json.forEach(item.score =>{
-        //    
-        //})
-//
-//        json.forEach(item =>) {
-//
-//        }
         json.forEach(item => {
-            genResultAvg += '${item.score/item.length}'
+            scoreSum += item.score;
         });
+        
+        // derive the average by dividing the total points by number of categories
+        const scoreAvg = scoreSum / json.length;
+        
+        // use rounding to get an integer instead of a decimal
+        const resultAvg = Math.round(scoreAvg);
+        //END average of scores JS
+        ////////////////
 
+        ////////////
+        //BEGIN js inputs for backgrounds
         json.forEach(item => {
             genSummaryItems +=
             `<li class="summary-item" 
@@ -76,6 +43,9 @@ fetch('./data.json')
                 <p class="item-max-score">/ 100</p>
             </li>`
         });
+        //END genSummaryItems
+        //////////////////////
         summaryItems.innerHTML = genSummaryItems;
+        result.innerHTML = resultAvg;
     });
 
